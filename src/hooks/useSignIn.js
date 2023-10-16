@@ -8,7 +8,7 @@ function useSignIn() {
             const res = await axios.post(process.env.REACT_APP_API_ENDPOINT + 'users/login/', {
                 userName,
                 password
-            });
+            }, { withCredentials: true });
             console.log(res?.data);
 
             return {
