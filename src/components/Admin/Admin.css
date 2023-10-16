@@ -1,0 +1,75 @@
+.admin-body {
+    min-height: 100vh;
+    background: linear-gradient(-90deg, #FE8D1F, #FFC25A);
+}
+
+.admin-body-main {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-body-main p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.admin-body-main button {
+    padding: .2rem .6rem;
+    margin: .5rem;
+    border: 0;
+    border-radius: .25rem;
+    background-color: #37475A;
+    color: white;
+}
+
+.pop-up-window {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.388);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-up input, .pop-up textarea {
+    width: 25rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+@media (max-width: 600px) {
+    .table-striped {
+        font-size: .5rem;
+    }
+
+    .pop-up input, .pop-up textarea {
+        width: 75vw;
+    }
+
+    .des-div {
+        max-width: 50vw;
+    }
+
+    .des-div  {
+        text-wrap: wrap;
+        font-size: .5rem;
+        font-weight: normal;
+        word-break: break-all;
+        white-space: normal;
+    }
+}

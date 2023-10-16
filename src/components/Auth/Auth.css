@@ -1,0 +1,88 @@
+.auth-body {
+    height: 100vh;
+    background-image: url('../../assets/home-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(45%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-sign {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 25rem;
+    padding: 1rem;
+}
+
+.sign-alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sign-alt button {
+    width: 49%;
+    background-color: #232F3E;
+    color: white;
+    font-size: large;
+    border: none;
+    padding: .5rem 0;
+}
+
+.sign-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign-head {
+    font-size: larger;
+    font-weight: 500;
+    margin: 1rem 0 .5rem 0;
+}
+
+.sign-area form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sign-input {
+    width: 75%;
+    margin: .4rem;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
+.sign-input-names {
+    width: 45%;
+    margin: .1rem;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
+.sign-button {
+    width: 70%;
+    margin: 1rem 0;
+    padding: .5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #8fc82c;
+    font-weight: bold;
+}
+
+@media (max-width: 870px) {
+    .user-sign {
+        width: 85%;
+    }
+}

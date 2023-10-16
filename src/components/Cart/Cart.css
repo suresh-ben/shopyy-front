@@ -1,0 +1,32 @@
+.cart-body {
+    height: calc(100vh - 4rem);
+    background: linear-gradient(-90deg, #FE8D1F, #FFC25A);
+    padding: 1rem 0;
+}
+
+.cart-address {
+    width: 25rem;
+    padding: .3rem;
+}
+
+.cart-order {
+   width: 25rem;
+   margin: 1rem;
+   padding: .5rem .25rem;
+   border-radius: .3rem;
+   border: 0;
+   background-color: #232F3E;
+   color: white;
+   font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .cart-address {
+        width: 90%;
+    }
+
+    .cart-order {
+        width: 90%;
+    }
+
+}

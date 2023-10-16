@@ -1,0 +1,63 @@
+.home-body {
+    height: 100vh;
+    background-image: url('../../assets/home-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(45%);
+    font-family: 'Nunito', sans-serif;
+}
+
+.home-main {
+    height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+.home-main div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-main-tag {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: 131A22;
+}
+
+.home-main-button {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #37475A;
+    font-size: large;
+    width: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.home-main button:hover {
+    background-color: #0D151D;
+    cursor: pointer;
+}
+
+.home-main img {}
+
+@media (max-width: 870px) {
+    .home-main img {
+        display: none;
+    }
+    .home-main {
+        justify-content: center
+    }
+    .home-main-button {
+        background-color: rgba(0, 0, 0, 0.379);
+    }
+}

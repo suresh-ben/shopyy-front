@@ -1,0 +1,33 @@
+.footer {
+    min-height: 7rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #232F3E;
+    color: white;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foot-links {
+    min-height: 5rem;
+}
+
+.foot-links a {
+    text-decoration: none;
+    color: grey;
+    margin: 0 5%;
+}
+
+.foot-links button {
+    background-color: transparent;
+    border: 0;
+}
+
+@media (max-width: 600px) {
+    
+}
