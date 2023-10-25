@@ -8,6 +8,7 @@ import Shop from './pages/Shop';
 import Admin from './pages/Admin';
 import Product from './pages/Product';
 import Orders from './pages/Orders';
+import Order from './pages/Order';
 import Cart from './pages/Cart';
 
 import { AuthContextProvider } from './contexts/AuthContext';
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/admin' element={< Admin />}/>
           <Route exact path='/product/:id' element={< Product />}/>
           <Route exact path='/orders' element={< Orders />}/>
+          <Route exact path='/order/:invoiceNo' element={< Order />}/>
           <Route exact path='/cart' element={< Cart />}/>
 
           {/* Not found */}

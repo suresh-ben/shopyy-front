@@ -1,0 +1,34 @@
+.main-order-home {
+    min-height: calc(100vh - 4rem);
+    background: linear-gradient(-90deg, #FE8D1F, #FFC25A);
+    display: flex;
+    align-items: center;
+}
+
+.main-order-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 .5rem;
+}
+
+.main-cancel-order-button {
+    background-color: red;
+    border: 0;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.main-cancel-prder-tag {
+    font-weight: bold;
+    font-size: large;
+}
+
+.main-order-home p {
+    text-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    .main-order-home {
+        flex-direction: column;
+    }
+}

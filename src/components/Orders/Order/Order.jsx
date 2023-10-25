@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 import useGetProduct from "../../../hooks/useGetProduct";
 
@@ -7,7 +8,8 @@ function Order({order}) {
     const { product } = useGetProduct(order.product);
 
     return (
-        <div className="order"> 
+        <Link to={`/order/${order.invoiceNo}`} style={{textDecoration: "none", color: "black"}}>
+            <div className="order"> 
             <div className="order-main">
                 <div>
                     <p>Product: {product?.name}</p>
@@ -19,11 +21,17 @@ function Order({order}) {
                 </div>
             </div>
             <div className="order-body">
-                <p>Quantity: {order.quantity}</p>
-                <p>Address: {order.shippingAddress}</p>
-                <p>Amount: {order.total}</p>
+                <div >
+                    <p>Quantity: {order.quantity}</p>
+                    <p>Address: {order.shippingAddress}</p>
+                    <p>Amount: {order.total}</p>
+                </div>
+                <div className="order-status" style={order.status == "success"?{ backgroundColor: "green"}: {backgroundColor: "red"}}>
+                    {order.status == "success"? "SUCCESS": "CANCELED"}
+                </div>
             </div>
         </div>
+        </Link>
     );
 }
 

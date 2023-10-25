@@ -51,8 +51,10 @@ function Product() {
         if(!order.success)
             setOrderErr("UNable to Order Product: " + order?.err);
         else {
-            setOrderErr("Order Successfull!!!");
-            window.location.reload();
+            setOrderErr("Order Successfull!!!, you will be redirected to your orders");
+            setTimeout(()=>{
+                navigate('/orders');
+            }, [1500])
         }
             
     }
