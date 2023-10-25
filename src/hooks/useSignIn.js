@@ -8,6 +8,8 @@ function useSignIn() {
             const res = await axios.post(process.env.REACT_APP_API_ENDPOINT + 'users/login/', {
                 userName,
                 password
+            }, {
+                crossDomain: true
             });
             console.log(res?.data);
 
